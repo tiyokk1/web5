@@ -1,0 +1,209 @@
+/* Reset */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/* Body Background */
+
+body {
+    font-family: 'Segoe UI', sans-serif;
+    background: linear-gradient(135deg, #0f2027, #229ca0, #2c5364);
+    color: white;
+    min-height: 100vh;
+}
+
+
+/* Navbar */
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #0b1e2d;
+    padding: 15px 40px;
+    flex-wrap: wrap;
+}
+
+.logo {
+    font-size: 22px;
+    font-weight: bold;
+    color: #00b4d8;
+}
+
+.logo .highlight {
+    color: #90ee90;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.nav-links li a {
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+.nav-links li a:hover {
+    color: #00ffd5;
+}
+
+
+/* Container Tengah */
+
+.contact-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 60px 20px;
+    text-align: center;
+    min-height: calc(100vh - 80px);
+}
+
+
+/* Kartu Kontak */
+
+.contact-card {
+    background-color: rgba(255, 255, 255, 0.05);
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: 0 0 25px rgba(0, 255, 213, 0.2);
+    backdrop-filter: blur(6px);
+    max-width: 350px;
+    width: 90%;
+}
+
+
+/* Foto Profil */
+
+.profile-img {
+    width: 160px;
+    height: 160px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-bottom: 20px;
+    border: 3px solid #00fff0;
+    box-shadow: 0 0 15px #00ffd5;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+/* Nama dan Kontak */
+
+.contact-container h2 {
+    font-size: 24px;
+    margin-bottom: 15px;
+}
+
+.contact-container p {
+    font-size: 16px;
+    margin: 5px 0;
+    color: #d3f8ff;
+    transition: transform 0.2s ease, color 0.2s ease;
+}
+
+
+/* Ikon Font Awesome */
+
+.contact-container i {
+    margin-right: 8px;
+    color: #00ffd5;
+    transition: all 0.3s ease;
+}
+
+
+/* Efek Hover */
+
+.contact-container p:hover {
+    transform: scale(1.05);
+    color: #ffffff;
+    cursor: pointer;
+}
+
+.contact-container p:hover i {
+    transform: scale(1.2);
+    color: #ffffff;
+}
+
+
+/* Responsive Mobile */
+
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .nav-links {
+        flex-direction: column;
+        width: 100%;
+        margin-top: 10px;
+    }
+    .nav-links li {
+        margin-bottom: 10px;
+    }
+    .contact-container {
+        padding: 40px 10px;
+    }
+    .contact-card {
+        padding: 20px;
+        border-radius: 15px;
+    }
+    .profile-img {
+        width: 120px;
+        height: 120px;
+    }
+    .contact-container h2 {
+        font-size: 20px;
+    }
+    .contact-container p {
+        font-size: 14px;
+    }
+}
+
+.footer p {
+    margin: 0;
+}
+
+.social-link {
+    color: #94a3b8;
+    font-size: 28px;
+    margin-left: 16px;
+    transition: color 0.3s ease;
+}
+
+.social-link:hover,
+.social-link:focus-visible {
+    color: #6366f1;
+    outline: none;
+}
+
+.contact-info {
+    padding: 40px;
+    text-align: center;
+}
+
+.contact-item {
+    margin: 20px auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 16px;
+    font-size: 1.2rem;
+}
+
+.contact-item svg {
+    width: 24px;
+    height: 24px;
+    color: #4ade80;
+}

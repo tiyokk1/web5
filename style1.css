@@ -1,0 +1,33 @@
+body {
+    background-color: rgb(64, 0, 255);
+}
+
+h1 {
+    color: white;
+    text-align: center;
+}
+
+p {
+    font-family: verdana;
+    font-size: 20px;
+    color: rgb(255, 132, 0);
+}
+
+#p1 {
+    font-family: Calibri;
+    color: violet;
+}
+
+h2,
+h3 {
+    font-family: cabria;
+    font-size: 15px;
+    color: red;
+}
+
+blockquote {
+    font-family: Georgia;
+    color: rgb(199, 234, 28);
+    font-style: italic;
+    text-align: justify;
+}
